@@ -1,0 +1,153 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dnielectura"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:9:5-47
+8        android:minSdkVersion="17"
+8-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:9:5-47
+9        android:targetSdkVersion="21" />
+9-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:9:15-44
+10
+11    <uses-feature
+11-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:11:5-81
+12        android:name="android.hardware.nfc"
+12-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:11:19-54
+13        android:required="true" />
+13-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:11:55-78
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:12:5-67
+15-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:12:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:13:5-80
+16-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:13:22-78
+17    <uses-permission android:name="android.permission.NFC" />
+17-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:14:5-61
+17-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:14:22-59
+18
+19    <application
+19-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:16:5-74:19
+20        android:name="com.dnielectura.MyAppDNIELECTURA"
+20-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:18:9-56
+21        android:allowBackup="true"
+21-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:17:9-35
+22        android:debuggable="true"
+23        android:hardwareAccelerated="true"
+23-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:20:9-43
+24        android:icon="@drawable/ic_launcher"
+24-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:19:9-45
+25        android:label="@string/app_name"
+25-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:21:9-41
+26        android:theme="@style/AppTheme" >
+26-->[:dniedroid] D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\dniedroid\build\.transforms\97d95cfb097713013a0f52ba779701bb\dniedroid\AndroidManifest.xml:20:9-40
+27        <activity
+27-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:22:9-30:20
+28            android:name="com.dnielectura.DNIeLectura"
+28-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:23:13-55
+29            android:label="@string/app_title_dgt"
+29-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:24:13-50
+30            android:screenOrientation="portrait" >
+30-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:25:13-49
+31            <intent-filter>
+31-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:26:13-29:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:27:17-69
+32-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:27:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:28:17-77
+34-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:28:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity
+37-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:32:9-44:20
+38            android:name="com.dnielectura.NFCOperationsEnc"
+38-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:32:19-66
+39            android:enabled="false"
+39-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:36:13-38
+40            android:label="@string/app_title_nfc"
+40-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:33:13-52
+41            android:launchMode="singleTask"
+41-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:35:13-44
+42            android:screenOrientation="portrait" >
+42-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:34:13-51
+43            <intent-filter>
+43-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:37:13-40:29
+44                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+44-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:38:17-75
+44-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:38:25-73
+45
+46                <category android:name="android.intent.category.DEFAULT" />
+46-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:39:17-75
+46-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:39:27-73
+47            </intent-filter>
+48
+49            <meta-data
+49-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:41:13-43:53
+50                android:name="android.nfc.action.TAG_DISCOVERED"
+50-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:42:17-65
+51                android:resource="@xml/filter_nfc" />
+51-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:43:17-51
+52        </activity>
+53        <activity
+53-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:46:9-48:51
+54            android:name="com.dnielectura.NFCOperationsEncKitKat"
+54-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:46:19-72
+55            android:label="@string/app_title_nfc"
+55-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:47:13-52
+56            android:screenOrientation="portrait" />
+56-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:48:13-49
+57        <activity
+57-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:50:9-52:51
+58            android:name="com.dnielectura.DNIeCanSelection"
+58-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:50:19-66
+59            android:label="@string/app_title_CAN"
+59-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:51:13-52
+60            android:screenOrientation="portrait" />
+60-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:52:13-49
+61        <activity
+61-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:54:9-56:51
+62            android:name="com.dnielectura.DNIeReader"
+62-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:54:19-60
+63            android:label="@string/app_title_nfc"
+63-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:55:13-52
+64            android:screenOrientation="portrait" />
+64-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:56:13-49
+65        <activity
+65-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:58:9-60:51
+66            android:name="com.dnielectura.DataResult"
+66-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:58:19-60
+67            android:label="@string/app_title_nfc"
+67-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:59:13-52
+68            android:screenOrientation="portrait" />
+68-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:60:13-49
+69        <activity
+69-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:62:9-64:51
+70            android:name="com.dnielectura.DataConfiguration"
+70-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:62:19-67
+71            android:label="@string/app_title_CONFIG"
+71-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:63:13-55
+72            android:screenOrientation="portrait" />
+72-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:64:13-49
+73        <activity
+73-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:66:9-68:51
+74            android:name="com.dnielectura.DNIeHelp"
+74-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:66:19-58
+75            android:label="@string/app_title_HELP"
+75-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:67:13-53
+76            android:screenOrientation="portrait" />
+76-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:68:13-49
+77        <activity
+77-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:70:9-72:51
+78            android:name="com.dnielectura.DataErrorActivity"
+78-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:70:19-52
+79            android:label="@string/app_title_ERROR"
+79-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:71:13-54
+80            android:screenOrientation="portrait" />
+80-->D:\Universidad\Criptografia\DNIE\Android_DGPApp_LECTURA\app\src\main\AndroidManifest.xml:72:13-49
+81    </application>
+82
+83</manifest>

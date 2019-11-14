@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="dniedroid-unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/Android_DGPApp_LECTURA/dniedroid/unspecified/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/Android_DGPApp_LECTURA/dniedroid/unspecified/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

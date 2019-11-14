@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:dniedroid:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dniedroid/build/.transforms/97d95cfb097713013a0f52ba779701bb/dniedroid/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/dniedroid/build/.transforms/97d95cfb097713013a0f52ba779701bb/dniedroid/res" />
+      <root url="jar://$PROJECT_DIR$/dniedroid/build/.transforms/97d95cfb097713013a0f52ba779701bb/dniedroid/jars/libs/scprov-jdk15-1.46.99.3-UNOFFICIAL-ROBERTO-RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,4 @@
+#Thu Nov 14 19:41:13 CET 2019
+base.0=D\:\\Universidad\\Criptografia\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
