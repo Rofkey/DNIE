@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -58,6 +59,7 @@ public class DNIeCanSelection extends Activity implements OnClickListener, OnIte
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         myContext = DNIeCanSelection.this;
      

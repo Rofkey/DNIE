@@ -1,0 +1,14 @@
+es.dniedroidfnmt
+array trusted_hosts
+drawable ic_launch
+id checkBoxShow
+id password_edit
+layout psswdentry
+string app_name
+string psswd_dialog_cancel
+string psswd_dialog_ok
+string psswd_dialog_short
+string psswd_dialog_show
+string psswd_dialog_title
+style AppBaseTheme
+style AppTheme

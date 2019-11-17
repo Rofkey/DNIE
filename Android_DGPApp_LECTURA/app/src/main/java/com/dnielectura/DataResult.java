@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -17,11 +18,21 @@ import android.widget.TextView;
 import com.dnielectura.jj2000.J2kStreamDecoder;
 
 import java.io.ByteArrayInputStream;
+import java.util.Calendar;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.*;
+import java.time.format.TextStyle;
+import java.util.GregorianCalendar;
+import java.util.Locale;
 
 import de.tsenger.androsmex.mrtd.DG11;
 import de.tsenger.androsmex.mrtd.DG1_Dnie;
 import de.tsenger.androsmex.mrtd.DG2;
 import de.tsenger.androsmex.mrtd.DG7;
+import es.gob.jmulticard.jse.provider.DnieProvider;
 
 public class DataResult extends Activity {
 
@@ -49,9 +60,29 @@ public class DataResult extends Activity {
 
             // Recuperamos los datos obtenidos en la lectura anterior
             byte [] m_dataDG1	= extras.getByteArray("DGP_DG1");
-            byte []  m_dataDG2	= extras.getByteArray("DGP_DG2");
+            byte [] m_dataDG2	= extras.getByteArray("DGP_DG2");
             byte [] m_dataDG7	= extras.getByteArray("DGP_DG7");
             byte [] m_dataDG11 	= extras.getByteArray("DGP_DG11");
+
+            String s_dataDG1 = new String(m_dataDG1);
+            String s_dataDG11 = new String(m_dataDG11);
+            Log.i("m_data",s_dataDG1);
+            Log.i("m_data",s_dataDG11);
+
+            /*
+            try {
+                final KeyStore ksUserDNIe = KeyStore.getInstance("MRTD");
+                ksUserDNIe.load(null, null);
+
+                Certificate signCert = ksUserDNIe.getCertificate("CertFirmaDigital");
+
+                Log.i("m_data","Certificado: " + signCert.toString());
+
+            }catch(Exception e)
+            {
+                Log.i("m_data","Excepcion: " + e.toString());
+            }
+            */
 
             // Construimos los objetos Data Group que hayamos leído
             if(m_dataDG1!=null) m_dg1   = new DG1_Dnie(m_dataDG1);
@@ -64,43 +95,123 @@ public class DataResult extends Activity {
             // Información del DG1, si la tenemos
             if(m_dg1!=null) {
                 // Nombre
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_01);
-                tvloc.setText(m_dg1.getName());
-                // Apellidos
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_02);
-                tvloc.setText(m_dg1.getSurname());
-                // Doc Number
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03);
-                tvloc.setText(m_dg1.getDocNumber());
-                // Doc caducity
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03_caducity);
-                tvloc.setText(m_dg1.getDateOfExpiry());
-                // Fecha de nacimiento
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_07);
-                tvloc.setText(m_dg1.getDateOfBirth());
-                // País de nacimiento
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_09);
-                tvloc.setText(m_dg1.getNationality().toUpperCase());
-            }
+                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_01_title);
+                tvloc.append(m_dg1.getName() + " " + m_dg1.getSurname());
 
-            ////////////////////////////////////////////////////////////////////////
-            // Información del DG11, si la tenemos
-            if(m_dg11!=null) {
-                // Lugar de nacimiento
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_08);
-                tvloc.setText(m_dg11.getBirthPlace().replace("<", " (") + ")");
-                // DNIe Number
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03);
-                tvloc.setText(m_dg11.getPersonalNumber());
-                // Dirección actual
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_04);
-                tvloc.setText(m_dg11.getAddress(DG11.ADDR_DIRECCION));
-                // Localidad
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_05);
-                tvloc.setText(m_dg11.getAddress(DG11.ADDR_LOCALIDAD));
-                // Provincia
-                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_06);
-                tvloc.setText(m_dg11.getAddress(DG11.ADDR_PROVINCIA));
+                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_02_title);
+                LocalDate today = LocalDate.now();
+                String dayofWeek = today.getDayOfWeek().getDisplayName(TextStyle.FULL, new Locale("es","ES"));
+                int dayofMonth = today.getDayOfMonth();
+                String month = today.getMonth().getDisplayName(TextStyle.FULL, new Locale("es","ES"));
+                int year = today.getYear();
+                tvloc.append(dayofWeek + ", " + dayofMonth + " de " + month + " del " + year);
+
+                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03_title);
+                String day = m_dg1.getDateOfBirth();
+                int d = Integer.parseInt(day.substring(0,2));
+                String s = day.substring(3,6);
+                int n = 0;
+                int dayofBirth = 0;
+                if(s.equals("ene")) {
+                    n = 0;
+                }
+                if(s.equals("feb")) {
+                    n = 1;
+                }
+                if(s.equals("mar")) {
+                    n = 2;
+                }
+                if(s.equals("abr")) {
+                    n = 3;
+                }
+                if(s.equals("may")) {
+                    n = 4;
+                }
+                if(s.equals("jun")) {
+                    n = 5;
+                }
+                if(s.equals("jul")) {
+                    n = 6;
+                }
+                if(s.equals("ago")) {
+                    n = 7;
+                }
+                if(s.equals("sep")) {
+                    n = 8;
+                }
+                if(s.equals("oct")) {
+                    n = 9;
+                }
+                if(s.equals("nov")) {
+                    n = 10;
+                }
+                if(s.equals("dic")) {
+                    n = 11;
+                }
+
+                if(n>0){
+                    dayofBirth += 31;
+                }
+                if(n>1){
+                    dayofBirth += 28;
+                }
+                if(n>2){
+                    dayofBirth += 31;
+                }
+                if(n>3){
+                    dayofBirth += 30;
+                }
+                if(n>4){
+                    dayofBirth += 31;
+                }
+                if(n>5){
+                    dayofBirth += 30;
+                }
+                if(n>6){
+                    dayofBirth += 31;
+                }
+                if(n>7){
+                    dayofBirth += 31;
+                }
+                if(n>8){
+                    dayofBirth += 30;
+                }
+                if(n>9){
+                    dayofBirth += 31;
+                }
+                if(n>10){
+                    dayofBirth += 30;
+                }
+
+                dayofBirth += d;
+                int dayofYear = today.getDayOfYear();
+                int result = (dayofBirth - dayofYear);
+
+                if(result < 0)
+                {
+                    result = (366 - dayofYear) + dayofBirth;
+                }
+
+                tvloc.append( result + " dias para tu cumpleaños");
+
+                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_04_title);
+                tvloc.append(m_dg1.getDateOfExpiry());
+
+                tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_05_title);
+                LocalTime time = LocalTime.now();
+
+                if(time.getHour()>11 && time.getHour()<20)
+                {
+                    tvloc.append("Buenas tardes");
+                }
+                if(time.getHour()>19 || time.getHour()<6)
+                {
+                    tvloc.append("Buenas noches");
+                }
+                if(time.getHour()>5 && time.getHour()<12)
+                {
+                    tvloc.append("Buenos dias");
+                }
             }
 
             ////////////////////////////////////////////////////////////////////////
@@ -151,20 +262,6 @@ public class DataResult extends Activity {
             // Ajustamos el tipo de letra del título y de toda la tabla
             Typeface typeFace = Typeface.createFromAsset(myContext.getAssets(), "fonts/HelveticaNeue.ttf");
             TableLayout miTabla = (TableLayout) findViewById(R.id.data_table);
-            for(int i = 0, j = miTabla.getChildCount(); i < j; i++) {
-                View view = miTabla.getChildAt(i);
-                if (view instanceof TableRow) {
-                    TableRow row = (TableRow) view;
-                    for(int idx = 0; idx < row.getChildCount(); idx++)
-                    {
-                        View viewText = row.getChildAt(idx);
-                        if (viewText instanceof TextView)
-                            ((TextView)viewText).setTypeface(typeFace);
-                    }
-                }
-            }
-
-            miTabla = (TableLayout) findViewById(R.id.data_table2);
             for(int i = 0, j = miTabla.getChildCount(); i < j; i++) {
                 View view = miTabla.getChildAt(i);
                 if (view instanceof TableRow) {

@@ -139,6 +139,7 @@ drawable fondo_opciones
 drawable fondo_ppal
 drawable fondo_ppal_1080
 drawable fondo_result2
+drawable fondo_secundario_rec
 drawable help
 drawable help_pressed
 drawable ic_launch
@@ -233,6 +234,7 @@ id imageView1
 id linearLayout
 id mainLinearLayout
 id password_edit
+id password_view
 id result1
 id resultimg
 id resultinfo
@@ -257,6 +259,7 @@ layout list_mrtd_row
 layout main
 layout nfcact2
 layout nfcactkitkat
+layout passwordentry
 layout psswdentry
 string about
 string about_author1

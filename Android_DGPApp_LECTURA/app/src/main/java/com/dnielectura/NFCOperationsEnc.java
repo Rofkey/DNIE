@@ -16,6 +16,7 @@ import android.nfc.tech.NfcB;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -24,8 +25,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.security.KeyStore;
 import java.security.KeyStoreSpi;
 import java.security.Security;
+import java.security.cert.Certificate;
 
 import de.tsenger.androsmex.data.CANSpecDO;
 import de.tsenger.androsmex.data.CANSpecDOStore;
@@ -38,6 +41,7 @@ import de.tsenger.androsmex.pace.PaceException;
 import es.gob.jmulticard.jse.provider.DnieKeyStore;
 import es.gob.jmulticard.jse.provider.DnieProvider;
 import es.gob.jmulticard.jse.provider.MrtdKeyStoreImpl;
+import es.gob.jmulticard.ui.passwordcallback.DNIeDialogManager;
 
 /////////////////////////////////////////////
 public class NFCOperationsEnc extends Activity {
@@ -351,6 +355,11 @@ public class NFCOperationsEnc extends Activity {
 
 			// Leemos la configuración para saber qué datos debemos obtener y cargar sólo los DGs que nos hayan solicitado
 			readUserConfiguration();
+
+			Certificate authCertCompleto = m_ksUserMrtd.getCertificate("CertAutenticacion");
+
+			Log.i("m_data","pasa por aqui");
+			Log.i("m_data",authCertCompleto.toString());
 
 			////////////////////////////////////////////////
 			// Leemos el EF_COM para saber qué datos hay disponibles en el documento

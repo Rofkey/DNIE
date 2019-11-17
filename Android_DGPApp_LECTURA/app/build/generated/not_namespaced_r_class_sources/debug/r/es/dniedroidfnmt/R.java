@@ -17,7 +17,7 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int ic_launch = 0x7f04002e;
+        public static final int ic_launch = 0x7f04002f;
     }
     public static final class id {
         private id() {}
@@ -28,7 +28,7 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int psswdentry = 0x7f07000d;
+        public static final int psswdentry = 0x7f07000e;
     }
     public static final class string {
         private string() {}

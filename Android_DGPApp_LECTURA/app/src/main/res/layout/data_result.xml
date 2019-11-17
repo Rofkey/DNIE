@@ -47,12 +47,12 @@
 
 		<TableLayout
 			android:id="@+id/data_table"
-			android:layout_width="match_parent"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:stretchColumns="1"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentStart="true"
-			android:layout_marginTop="120dp"
+			android:layout_marginTop="150dp"
 			android:layout_marginStart="30dp">
 
 			<TableRow
@@ -64,7 +64,34 @@
 					android:layout_height="match_parent"
 					android:gravity="left"
 					android:padding="1dp"
-					android:text="@string/info_titl_sujeto"
+					android:text="Criptografía 2019"
+					android:textAppearance="@style/TextAppearance.Baskerville.Small"
+					android:textStyle="bold" />
+			</TableRow>
+
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<TextView
+					android:layout_span="2"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="left"
+					android:padding="1dp"
+					android:text="Fernando Garcia Doval y Rubén De la Llave Pinto"
+					android:textAppearance="@style/TextAppearance.Baskerville.Small"
+					android:textStyle="bold" />
+			</TableRow>
+			<TableRow
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<TextView
+					android:layout_span="2"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="left"
+					android:padding="1dp"
+					android:text=" "
 					android:textAppearance="@style/TextAppearance.Baskerville.Small"
 					android:textStyle="bold" />
 			</TableRow>
@@ -74,256 +101,65 @@
 				android:layout_height="match_parent" >
 				<TextView
 					android:id="@+id/CITIZEN_data_tab_01_title"
-				   android:layout_width="match_parent"
-				   android:layout_height="match_parent"
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
 				   android:gravity="left"
 				   android:padding="1dp"
-				   android:layout_marginRight="3dp"
-				   android:text="@string/info_name"
+				   android:text="Hola "
 				   android:textAppearance="@style/TextAppearance.Baskerville.Small"
 				   android:textStyle="bold" />
-
-			   <TextView
-				   android:id="@+id/CITIZEN_data_tab_01"
-				   android:gravity="left"
-				   android:layout_width="match_parent"
-				   android:layout_height="match_parent"
-				   android:padding="1dp"
-				   android:textAppearance="@style/TextAppearance.Baskerville.Small" />
 			</TableRow>
-
 			<TableRow
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" >
 				<TextView
-				   android:id="@+id/CITIZEN_data_tab_02_title"
-				   android:layout_width="match_parent"
-				   android:layout_height="match_parent"
-				   android:gravity="left"
-					android:layout_marginRight="3dp"
+					android:id="@+id/CITIZEN_data_tab_02_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="left"
 					android:padding="1dp"
-				   android:text="@string/info_surname"
-				   android:textAppearance="@style/TextAppearance.Baskerville.Small"
-				   android:textStyle="bold" />
-
-			   <TextView
-				   android:id="@+id/CITIZEN_data_tab_02"
-				   android:gravity="left"
-				   android:layout_width="match_parent"
-				   android:layout_height="match_parent"
-				   android:padding="1dp"
-				   android:textAppearance="@style/TextAppearance.Baskerville.Small" />
+					android:text="Hoy es "
+					android:textAppearance="@style/TextAppearance.Baskerville.Small"
+					android:textStyle="bold" />
 			</TableRow>
-
 			<TableRow
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" >
 				<TextView
 					android:id="@+id/CITIZEN_data_tab_03_title"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:gravity="left"
-					android:layout_marginRight="3dp"
-					android:padding="1dp"
-					android:text="@string/info_numdoc"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"
-					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_03"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"/>
-			</TableRow>
-
-			<TableRow
-				android:layout_width="match_parent"
-				android:layout_height="match_parent" >
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_03_title_caducity"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:gravity="left"
-					android:layout_marginRight="3dp"
-					android:padding="1dp"
-					android:text="@string/info_caducity"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"
-					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_03_caducity"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"/>
-			</TableRow>
-
-			<TableRow
-				android:layout_width="match_parent"
-				android:layout_height="match_parent" >
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_07_title"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:gravity="left"
 					android:padding="1dp"
-					android:layout_marginRight="3dp"
-					android:text="@string/info_birth"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"
-					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_07"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small" />
-			</TableRow>
-
-			<TableRow
-				android:layout_width="match_parent"
-				android:layout_height="match_parent" >
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_08_title"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:gravity="left"
-					android:layout_marginRight="3dp"
-					android:padding="1dp"
-					android:text="@string/info_birth_place"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"
-					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_08"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small" />
-			</TableRow>
-		</TableLayout>
-
-		<TableLayout
-			android:id="@+id/data_table2"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:padding="12dp"
-			android:stretchColumns="1"
-			android:shrinkColumns="1"
-			android:layout_below="@+id/data_table"
-			android:layout_toEndOf="@+id/butVolver">
-			<TableRow
-				android:layout_width="match_parent"
-				android:layout_height="match_parent">
-				<TextView
-					android:layout_span="2"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:gravity="center"
-					android:text="@string/info_titl_contacto"
+					android:text="Faltan "
 					android:textAppearance="@style/TextAppearance.Baskerville.Small"
 					android:textStyle="bold" />
 			</TableRow>
-
-			<TableRow
-				android:layout_width="match_parent"
-				android:layout_height="match_parent" >
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_09_title"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:gravity="left"
-					android:padding="1dp"
-					android:layout_marginRight="3dp"
-					android:text="@string/info_country"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"
-					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_09"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:singleLine="false"
-					android:maxLines="3"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"/>
-			</TableRow>
-
 			<TableRow
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" >
 				<TextView
 					android:id="@+id/CITIZEN_data_tab_04_title"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:gravity="left"
 					android:padding="1dp"
-					android:layout_marginRight="3dp"
-					android:text="@string/info_address"
+					android:text="Debes renovar tu certificado antes de el proximo "
 					android:textAppearance="@style/TextAppearance.Baskerville.Small"
 					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_04"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:singleLine="false"
-					android:maxLines="3"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"/>
 			</TableRow>
-
 			<TableRow
 				android:layout_width="match_parent"
 				android:layout_height="match_parent" >
 				<TextView
 					android:id="@+id/CITIZEN_data_tab_05_title"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
 					android:gravity="left"
 					android:padding="1dp"
-					android:layout_marginRight="3dp"
-					android:text="@string/info_provincia"
+					android:text=""
 					android:textAppearance="@style/TextAppearance.Baskerville.Small"
 					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_05"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"/>
-			</TableRow>
-
-			<TableRow
-				android:layout_width="match_parent"
-				android:layout_height="match_parent" >
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_06_title"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:gravity="left"
-					android:padding="1dp"
-					android:layout_marginRight="3dp"
-					android:text="@string/info_localidad"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"
-					android:textStyle="bold" />
-
-				<TextView
-					android:id="@+id/CITIZEN_data_tab_06"
-					android:gravity="left"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:padding="1dp"
-					android:textAppearance="@style/TextAppearance.Baskerville.Small"/>
 			</TableRow>
 		</TableLayout>
 

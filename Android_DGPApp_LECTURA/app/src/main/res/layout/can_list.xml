@@ -48,12 +48,12 @@ android:orientation="vertical">
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@drawable/progresscontainer">
+
                 <ListView
                     android:id="@+id/canList"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:focusable="true">
-                </ListView>
+                    android:focusable="true"></ListView>
             </LinearLayout>
         </LinearLayout>
 
