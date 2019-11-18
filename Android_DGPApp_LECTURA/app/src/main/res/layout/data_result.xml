@@ -144,7 +144,7 @@
 					android:layout_height="wrap_content"
 					android:gravity="left"
 					android:padding="1dp"
-					android:text="Debes renovar tu certificado antes de el proximo "
+					android:text="Debes renovar tu certificado antes de el proximo: "
 					android:textAppearance="@style/TextAppearance.Baskerville.Small"
 					android:textStyle="bold" />
 			</TableRow>
