@@ -4,24 +4,24 @@
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\layout\\can_list.xml"
     },
     {
-        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable_xmlopcion_w_config.xml.flat",
-        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable\\xmlopcion_w_config.xml"
-    },
-    {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\layout-large_nfcact2.xml.flat",
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\layout-large\\nfcact2.xml"
+    },
+    {
+        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable_xmlopcion_w_config.xml.flat",
+        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable\\xmlopcion_w_config.xml"
     },
     {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_fondo_secundario_rec.png.flat",
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\fondo_secundario_rec.png"
     },
     {
-        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\layout_psswdentry.xml.flat",
-        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\dniedroid\\build\\.transforms\\6e6e5d2527cf9ffea77c0f36f4d2b655\\dniedroid\\res\\layout\\psswdentry.xml"
-    },
-    {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logodnie.png.flat",
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\logodnie.png"
+    },
+    {
+        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\layout_psswdentry.xml.flat",
+        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\dniedroid\\build\\.transforms\\6e6e5d2527cf9ffea77c0f36f4d2b655\\dniedroid\\res\\layout\\psswdentry.xml"
     },
     {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_w_config.png.flat",
@@ -36,12 +36,12 @@
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\layout-large\\list_mrtd_row.xml"
     },
     {
-        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_boton_nuevodnie_pulsado.png.flat",
-        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\boton_nuevodnie_pulsado.png"
-    },
-    {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_fnmt.png.flat",
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\logo_fnmt.png"
+    },
+    {
+        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_boton_nuevodnie_pulsado.png.flat",
+        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\boton_nuevodnie_pulsado.png"
     },
     {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_services_button.png.flat",
@@ -80,12 +80,12 @@
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-ldpi\\dni_rec.png"
     },
     {
-        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_w_volver.png.flat",
-        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\btn_w_volver.png"
-    },
-    {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_roundedbox_rec.png.flat",
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\roundedbox_rec.png"
+    },
+    {
+        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_w_volver.png.flat",
+        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\btn_w_volver.png"
     },
     {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_w_ayuda.png.flat",
@@ -128,12 +128,12 @@
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\dniedroid\\build\\.transforms\\6e6e5d2527cf9ffea77c0f36f4d2b655\\dniedroid\\res\\drawable-xxhdpi\\ic_launch.png"
     },
     {
-        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_red_logodgp_cnp.png.flat",
-        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\red_logodgp_cnp.png"
-    },
-    {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_progresscontainer.xml.flat",
         "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\progresscontainer.xml"
+    },
+    {
+        "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_red_logodgp_cnp.png.flat",
+        "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\src\\main\\res\\drawable-hdpi\\red_logodgp_cnp.png"
     },
     {
         "merged": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dni30_peq.png.flat",

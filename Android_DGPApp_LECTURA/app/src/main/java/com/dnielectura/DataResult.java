@@ -25,6 +25,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.TextStyle;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
@@ -33,6 +35,8 @@ import de.tsenger.androsmex.mrtd.DG1_Dnie;
 import de.tsenger.androsmex.mrtd.DG2;
 import de.tsenger.androsmex.mrtd.DG7;
 import es.gob.jmulticard.jse.provider.DnieProvider;
+
+import static java.time.temporal.ChronoUnit.DAYS;
 
 public class DataResult extends Activity {
 
@@ -94,10 +98,12 @@ public class DataResult extends Activity {
             ////////////////////////////////////////////////////////////////////////
             // Información del DG1, si la tenemos
             if(m_dg1!=null) {
-                // Nombre
+
+                // Nombre y apellidos
                 tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_01_title);
                 tvloc.append(m_dg1.getName() + " " + m_dg1.getSurname());
 
+                // Fecha de hoy
                 tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_02_title);
                 LocalDate today = LocalDate.now();
                 String dayofWeek = today.getDayOfWeek().getDisplayName(TextStyle.FULL, new Locale("es","ES"));
@@ -106,97 +112,25 @@ public class DataResult extends Activity {
                 int year = today.getYear();
                 tvloc.append(dayofWeek + ", " + dayofMonth + " de " + month + " del " + year);
 
+                //Dias para el cumpleaños
                 tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_03_title);
-                String day = m_dg1.getDateOfBirth();
-                int d = Integer.parseInt(day.substring(0,2));
-                String s = day.substring(3,6);
-                int n = 0;
-                int dayofBirth = 0;
-                if(s.equals("ene")) {
-                    n = 0;
-                }
-                if(s.equals("feb")) {
-                    n = 1;
-                }
-                if(s.equals("mar")) {
-                    n = 2;
-                }
-                if(s.equals("abr")) {
-                    n = 3;
-                }
-                if(s.equals("may")) {
-                    n = 4;
-                }
-                if(s.equals("jun")) {
-                    n = 5;
-                }
-                if(s.equals("jul")) {
-                    n = 6;
-                }
-                if(s.equals("ago")) {
-                    n = 7;
-                }
-                if(s.equals("sep")) {
-                    n = 8;
-                }
-                if(s.equals("oct")) {
-                    n = 9;
-                }
-                if(s.equals("nov")) {
-                    n = 10;
-                }
-                if(s.equals("dic")) {
-                    n = 11;
-                }
+                String dayofbirth = m_dg1.getDateOfBirth();
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMM yyyy");
+                LocalDate dateofbirth = LocalDate.parse(dayofbirth, formatter);
+                int daysBetween = dateofbirth.getDayOfYear() - today.getDayOfYear();
 
-                if(n>0){
-                    dayofBirth += 31;
-                }
-                if(n>1){
-                    dayofBirth += 28;
-                }
-                if(n>2){
-                    dayofBirth += 31;
-                }
-                if(n>3){
-                    dayofBirth += 30;
-                }
-                if(n>4){
-                    dayofBirth += 31;
-                }
-                if(n>5){
-                    dayofBirth += 30;
-                }
-                if(n>6){
-                    dayofBirth += 31;
-                }
-                if(n>7){
-                    dayofBirth += 31;
-                }
-                if(n>8){
-                    dayofBirth += 30;
-                }
-                if(n>9){
-                    dayofBirth += 31;
-                }
-                if(n>10){
-                    dayofBirth += 30;
-                }
-
-                dayofBirth += d;
-                int dayofYear = today.getDayOfYear();
-                int result = (dayofBirth - dayofYear);
-
-                if(result < 0)
+                if(daysBetween < 0)
                 {
-                    result = (366 - dayofYear) + dayofBirth;
+                    daysBetween = (366 - today.getDayOfYear()) + dateofbirth.getDayOfYear();
                 }
 
-                tvloc.append( result + " dias para tu cumpleaños");
+                tvloc.append( daysBetween + " dias para tu cumpleaños");
 
+                //Dias para la renovacion
                 tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_04_title);
                 tvloc.append(m_dg1.getDateOfExpiry());
 
+                //Los buenos dias/tardes/noches
                 tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_05_title);
                 LocalTime time = LocalTime.now();
 
