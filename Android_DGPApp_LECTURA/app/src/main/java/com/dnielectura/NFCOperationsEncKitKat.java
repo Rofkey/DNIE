@@ -13,6 +13,7 @@ import android.nfc.Tag;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,6 +27,8 @@ import java.security.KeyStoreSpi;
 import java.security.Security;
 import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import de.tsenger.androsmex.data.CANSpecDO;
@@ -67,6 +70,8 @@ import es.gob.jmulticard.ui.passwordcallback.DNIeDialogManager;
     private DG11        m_dg11;
     private DG2         m_dg2;
     private DG7         m_dg7;
+
+    private String fechaCert = null;
 
     private boolean readerModeON = false;
 
@@ -235,6 +240,7 @@ import es.gob.jmulticard.ui.passwordcallback.DNIeDialogManager;
             if(m_dg2!=null) b.putByteArray("DGP_DG2",   m_dg2.getBytes());
             if(m_dg7!=null) b.putByteArray("DGP_DG7",   m_dg7.getBytes());
             if(m_dg11!=null)b.putByteArray("DGP_DG11",  m_dg11.getBytes());
+            if(fechaCert!=null)b.putString("Date",  fechaCert);
 
             // Pasamos los datos a la activity correspondiente
             Intent myResultIntent = new Intent(NFCOperationsEncKitKat.this, DataResult.class);
@@ -457,19 +463,7 @@ import es.gob.jmulticard.ui.passwordcallback.DNIeDialogManager;
                 cansDO.delete(canDnie);
                 cansDO.save(newCan);
             }
-            //Construimos el dialogo para el PIN
-            MyPasswordDialog myFragment=new MyPasswordDialog(NFCOperationsEncKitKat.this, true);
-            DNIeDialogManager.setDialogUIHandler(myFragment);
 
-            //El certificado completo/real
-            KeyStore.Entry entry = ksSpi.engineGetEntry("CertAutenticacion", null);
-            KeyStore.PrivateKeyEntry pkEntry = (KeyStore.PrivateKeyEntry) entry;
-            Certificate authCertCompleto = pkEntry.getCertificate();
-
-
-            Date fechaCert = ((X509Certificate) authCertCompleto).getNotAfter();
-
-            System.out.println(fechaCert.toString());
             ////////////////////////////////////////////////
             // Leemos el DG2
             if(m_readDg2&&m_existDg2)
@@ -488,7 +482,6 @@ import es.gob.jmulticard.ui.passwordcallback.DNIeDialogManager;
                     throw e;
                 }
             }
-
             ////////////////////////////////////////////////
             // Leemos el DG7
             if(m_readDg7&&m_existDg7)
@@ -505,6 +498,20 @@ import es.gob.jmulticard.ui.passwordcallback.DNIeDialogManager;
                     e.printStackTrace();
                     throw e;
                 }
+            }
+
+            //Construimos el dialogo para el PIN
+            MyPasswordDialog myFragment=new MyPasswordDialog(NFCOperationsEncKitKat.this, true);
+            DNIeDialogManager.setDialogUIHandler(myFragment);
+
+            //El certificado completo/real
+            KeyStore.Entry entry = ksSpi.engineGetEntry("CertAutenticacion", null);
+            KeyStore.PrivateKeyEntry pkEntry = (KeyStore.PrivateKeyEntry) entry;
+            Certificate authCertCompleto = pkEntry.getCertificate();
+
+            if(authCertCompleto != null) {
+                DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                fechaCert = formatter.format(((X509Certificate) authCertCompleto).getNotAfter());
             }
         }
         catch(Exception e)

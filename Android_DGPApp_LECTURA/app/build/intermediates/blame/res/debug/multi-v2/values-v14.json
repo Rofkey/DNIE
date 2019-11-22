@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\UbuntuFiles\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\UbuntuFiles\\DNIE\\Android_DGPApp_LECTURA\\dniedroid\\build\\.transforms\\90c34a49879e652fde69408b15104ad2\\dniedroid\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\jirac\\Documents\\GitHub\\DNIE\\Android_DGPApp_LECTURA\\dniedroid\\build\\.transforms\\6e6e5d2527cf9ffea77c0f36f4d2b655\\dniedroid\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",

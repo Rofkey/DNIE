@@ -356,11 +356,6 @@ public class NFCOperationsEnc extends Activity {
 			// Leemos la configuración para saber qué datos debemos obtener y cargar sólo los DGs que nos hayan solicitado
 			readUserConfiguration();
 
-			Certificate authCertCompleto = m_ksUserMrtd.getCertificate("CertAutenticacion");
-
-			Log.i("m_data","pasa por aqui");
-			Log.i("m_data",authCertCompleto.toString());
-
 			////////////////////////////////////////////////
 			// Leemos el EF_COM para saber qué datos hay disponibles en el documento
 			try{

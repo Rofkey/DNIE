@@ -284,7 +284,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="ZY224ZSQQ2" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="R58M76J88AZ" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -302,26 +302,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEnc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6103">
-              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEncKitKat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="471" column="53" selection-start-line="471" selection-start-column="53" selection-end-line="471" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="260">
+              <caret line="499" column="17" lean-forward="true" selection-start-line="499" selection-start-column="17" selection-end-line="499" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -330,44 +315,8 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/data_result.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/DataResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="130" column="34" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/MyPasswordDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="35" column="60" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/DNIeCanSelection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="193" column="63" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="379">
+              <caret line="144" column="42" lean-forward="true" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -396,6 +345,11 @@
       <find>DataResult</find>
       <find>S</find>
       <find>myResultIntent</find>
+      <find>authCertCompleto</find>
+      <find>DGP_DG1</find>
+      <find>fechaCert</find>
+      <find>&quot;m_data&quot;,</find>
+      <find>m_data</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\jirac\Documents\GitHub\DNIE\Android_DGPApp_LECTURA\app</dir>
@@ -452,12 +406,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/can_list.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/data_result.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/DataResult.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/DNIeLectura.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/DNIeReader.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/MyPasswordDialog.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEnc.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/DNIeCanSelection.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEnc.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/DataResult.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEncKitKat.java" />
       </list>
     </option>
@@ -481,26 +435,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="Android_DGPApp_LECTURA" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Android_DGPApp_LECTURA" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Android_DGPApp_LECTURA" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="dnielectura" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
             <path>
               <item name="Android_DGPApp_LECTURA" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -510,6 +448,7 @@
         </subPane>
       </pane>
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -795,14 +734,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1577" height="1016" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" />
       <window_info id="Build Variants" order="1" sideWeight="0.50993377" side_tool="true" weight="0.14984101" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Palette&#9;" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49006623" visible="true" weight="0.120473996" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.49006623" visible="true" weight="0.120429255" />
       <window_info id="Structure" order="5" weight="0.25" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
@@ -815,19 +753,19 @@
       <window_info anchor="bottom" id="Android" order="5" visible="true" weight="0.32222223" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3281372" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32655367" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32655367" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.38444445" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32881355" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32969603" />
       <window_info anchor="bottom" id="Android Profiler" order="14" />
-      <window_info anchor="bottom" id="Build" order="15" weight="0.16723163" />
-      <window_info anchor="bottom" id="Logcat" order="16" weight="0.32969603" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.16679657" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="16" visible="true" weight="0.32969603" />
       <window_info anchor="bottom" id="Flutter Performance" order="17" side_tool="true" />
       <window_info anchor="right" id="Assistant" order="0" weight="0.3298887" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.32982224" />
-      <window_info anchor="right" id="Preview" order="2" weight="0.3265306" />
+      <window_info anchor="right" id="Preview" order="2" weight="0.32631162" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Designer" order="5" />
@@ -943,7 +881,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEncKitKat.java</url>
-          <line>189</line>
+          <line>201</line>
           <properties />
           <option name="timeStamp" value="273" />
         </line-breakpoint>
@@ -1001,13 +939,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nfcactkitkat.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/can_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1285,16 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEnc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6103">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/dniedroid/build/.transforms/90c34a49879e652fde69408b15104ad2/dniedroid/jars/classes.jar!/es/gob/jmulticard/jse/provider/DnieKeyStore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1309,20 +1230,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/DNIeCanSelection.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEnc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="193" column="63" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="63" />
+        <state relative-caret-position="192">
+          <caret line="356" column="36" selection-start-line="356" selection-start-column="36" selection-end-line="356" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/android.jar!/java/security/cert/X509Certificate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/DNIeCanSelection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="195" column="35" selection-start-line="195" selection-start-column="35" selection-end-line="195" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/MyPasswordDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="35" column="60" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="60" />
+        <state relative-caret-position="155">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1331,8 +1266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/DataResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="130" column="34" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="34" />
+        <state relative-caret-position="342">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1342,18 +1277,15 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/data_result.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="121" column="37" selection-start-line="121" selection-start-column="37" selection-end-line="121" selection-end-column="37" />
+        <state relative-caret-position="379">
+          <caret line="144" column="42" lean-forward="true" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/dnielectura/NFCOperationsEncKitKat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="471" column="53" selection-start-line="471" selection-start-column="53" selection-end-line="471" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="499" column="17" lean-forward="true" selection-start-line="499" selection-start-column="17" selection-end-line="499" selection-end-column="17" />
         </state>
       </provider>
     </entry>

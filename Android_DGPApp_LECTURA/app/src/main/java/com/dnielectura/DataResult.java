@@ -67,26 +67,7 @@ public class DataResult extends Activity {
             byte [] m_dataDG2	= extras.getByteArray("DGP_DG2");
             byte [] m_dataDG7	= extras.getByteArray("DGP_DG7");
             byte [] m_dataDG11 	= extras.getByteArray("DGP_DG11");
-
-            String s_dataDG1 = new String(m_dataDG1);
-            String s_dataDG11 = new String(m_dataDG11);
-            Log.i("m_data",s_dataDG1);
-            Log.i("m_data",s_dataDG11);
-
-            /*
-            try {
-                final KeyStore ksUserDNIe = KeyStore.getInstance("MRTD");
-                ksUserDNIe.load(null, null);
-
-                Certificate signCert = ksUserDNIe.getCertificate("CertFirmaDigital");
-
-                Log.i("m_data","Certificado: " + signCert.toString());
-
-            }catch(Exception e)
-            {
-                Log.i("m_data","Excepcion: " + e.toString());
-            }
-            */
+            String fecha_certificado = extras.getString("Date");
 
             // Construimos los objetos Data Group que hayamos leído
             if(m_dataDG1!=null) m_dg1   = new DG1_Dnie(m_dataDG1);
@@ -128,7 +109,7 @@ public class DataResult extends Activity {
 
                 //Dias para la renovacion
                 tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_04_title);
-                tvloc.append(m_dg1.getDateOfExpiry());
+                tvloc.append(fecha_certificado);
 
                 //Los buenos dias/tardes/noches
                 tvloc = (TextView) findViewById(R.id.CITIZEN_data_tab_05_title);
