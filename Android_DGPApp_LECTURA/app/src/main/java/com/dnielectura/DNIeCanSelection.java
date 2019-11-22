@@ -25,10 +25,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.security.Security;
 import java.util.ArrayList;
 
 import de.tsenger.androsmex.data.CANSpecDO;
 import de.tsenger.androsmex.data.CANSpecDOStore;
+import es.gob.jmulticard.jse.provider.DnieProvider;
 
 public class DNIeCanSelection extends Activity implements OnClickListener, OnItemLongClickListener, OnItemClickListener {
 
@@ -194,6 +196,12 @@ public class DNIeCanSelection extends Activity implements OnClickListener, OnIte
 					cans.save(can);
 					refreshAdapter();
 					read(can);
+
+
+
+
+
+
 				}
 			});
 		    ad.setButton(AlertDialog.BUTTON_NEGATIVE, getString(R.string.psswd_dialog_cancel), new DialogInterface.OnClickListener() {

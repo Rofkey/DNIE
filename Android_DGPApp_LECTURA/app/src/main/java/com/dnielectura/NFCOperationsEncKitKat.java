@@ -21,8 +21,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.security.KeyStore;
 import java.security.KeyStoreSpi;
 import java.security.Security;
+import java.security.cert.Certificate;
+import java.security.cert.X509Certificate;
+import java.util.Date;
 
 import de.tsenger.androsmex.data.CANSpecDO;
 import de.tsenger.androsmex.data.CANSpecDOStore;
@@ -35,9 +39,10 @@ import de.tsenger.androsmex.pace.PaceException;
 import es.gob.jmulticard.jse.provider.DnieKeyStore;
 import es.gob.jmulticard.jse.provider.DnieProvider;
 import es.gob.jmulticard.jse.provider.MrtdKeyStoreImpl;
+import es.gob.jmulticard.ui.passwordcallback.DNIeDialogManager;
 
 @SuppressLint("NewApi")
-public class NFCOperationsEncKitKat extends Activity implements ReaderCallback
+    public class NFCOperationsEncKitKat extends Activity implements ReaderCallback
 {
 	// NFC Adapter
     static private NfcAdapter myNfcAdapter = null;
@@ -66,6 +71,8 @@ public class NFCOperationsEncKitKat extends Activity implements ReaderCallback
     private boolean readerModeON = false;
 
     private DnieKeyStore m_ksUserMrtd = null;
+    private KeyStore m_ksUserDNIe = null;
+    private static final String AUTH_CERT_ALIAS = "CertAutentication";
 
     final Handler myHandler = new Handler();
     private ProgressDialog progressBar;
@@ -450,7 +457,19 @@ public class NFCOperationsEncKitKat extends Activity implements ReaderCallback
                 cansDO.delete(canDnie);
                 cansDO.save(newCan);
             }
+            //Construimos el dialogo para el PIN
+            MyPasswordDialog myFragment=new MyPasswordDialog(NFCOperationsEncKitKat.this, true);
+            DNIeDialogManager.setDialogUIHandler(myFragment);
 
+            //El certificado completo/real
+            KeyStore.Entry entry = ksSpi.engineGetEntry("CertAutenticacion", null);
+            KeyStore.PrivateKeyEntry pkEntry = (KeyStore.PrivateKeyEntry) entry;
+            Certificate authCertCompleto = pkEntry.getCertificate();
+
+
+            Date fechaCert = ((X509Certificate) authCertCompleto).getNotAfter();
+
+            System.out.println(fechaCert.toString());
             ////////////////////////////////////////////////
             // Leemos el DG2
             if(m_readDg2&&m_existDg2)
